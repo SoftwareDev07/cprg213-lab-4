@@ -1,0 +1,96 @@
+/* Reset default margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Box Styling */
+.box {
+    height: 50px;
+    background-color: lightblue;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Two Equally Sized Columns */
+.two-columns {
+    gap: 10px;
+}
+
+.two-columns .box {
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* Three Equally Sized Columns */
+.three-columns {
+    gap: 15px;
+}
+
+.three-columns .box {
+    flex: 1;
+    margin: 0 7.5px;
+}
+
+/* Three Unequal Columns */
+.three-unequal {
+    gap: 12px;
+}
+
+.three-unequal .wide {
+    flex: 2;
+}
+
+.three-unequal .box {
+    flex: 1;
+    margin: 0 6px;
+    border: 2px solid black;
+}
+
+/* Four Equally Sized Columns */
+.four-columns {
+    gap: 12px;
+}
+
+.four-columns .box {
+    flex: 1;
+    margin: 0 6px;
+    border: 2px solid black;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
